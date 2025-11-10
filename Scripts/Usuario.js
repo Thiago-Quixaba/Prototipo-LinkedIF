@@ -17,12 +17,4 @@ window.addEventListener('DOMContentLoaded', () => {
         const indicador = document.getElementById('indicador');
         const index = Array.from(botoes).indexOf(botao);
         indicador.style.left = `${index * 50}%`;
-
-        console.log("Selecionado:", botao.textContent.trim());
-
-        if (botao.textContent.trim().toLowerCase() === 'professor') {
-            window.location.href = '/LinkDif/Home/Cadastro_Prof.html';
-        } else {
-            window.location.href = '/LinkDif/Home/Cadastro.html'
-        }
     }
